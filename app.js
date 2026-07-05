@@ -99,7 +99,7 @@ function bindInputEvents() {
 
 async function loadCSVData() {
     const statusDiv = document.getElementById('status');
-    statusDiv.innerHTML = '<span class="loading-spinner"></span> Membaca file CSV...';
+    statusDiv.innerHTML = '<span class="loading-spinner"></span> Loading...';
     try {
         const response = await fetch('Data-harga.csv');
         if (!response.ok) throw new Error(`File CSV tidak ditemukan`);
